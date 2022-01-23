@@ -29,3 +29,36 @@ console.log(friends % 4)
 //friends /=5;
 friends %=2;
 console.log(friends)
+
+//////////////////////////hoisting//////////////
+f = "zecas"
+console.log(f)
+
+var n1 ="Bro"
+console.log(f,n1)
+var f = "To"
+
+//////////////////VAR VS LET////////////////////
+// let é de 2015 é usado num scope {} let mais usado nos ciclos for
+// var é usado na função, var pode fazer override a alguma var para trás 
+
+for (let i=1; i<= 3 ; i++){
+    console.log(i)
+}
+
+console.log(i)//index.js:49 Uncaught ReferenceError: i is not defined
+
+for (var i=1; i<= 3 ; i++){
+    console.log(i)
+}
+
+console.log(i)
+
+function DoSome(){
+    for (var i=1; i<= 3 ; i++){
+        console.log(i)
+    }
+    
+}
+
+DoSome()

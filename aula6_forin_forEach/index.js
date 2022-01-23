@@ -39,3 +39,15 @@ for (let i=0; i<col; i++){
     document.getElementById('myRet').innerHTML += "<br>"  
 }
 
+//////////////////////////////////////
+
+let total = 0
+let cart = [5 , 6, 7, 8, 9]
+
+function checkOut(e){
+    total += e
+
+}
+
+cart.forEach(checkOut)
+console.log("TOTAL:: "+total)
