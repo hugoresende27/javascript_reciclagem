@@ -1,4 +1,0 @@
-//Math 
-
-var myNum;
-myNum
